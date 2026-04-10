@@ -431,3 +431,116 @@ h1::after {
         padding: 1.5rem;
     }
 }
+/* --- Style Spécifique Divertissement --- */
+
+/* Section Entête */
+.divertissement-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.divertissement-header h1 {
+    font-size: 2.5rem;
+    color: #2d3436;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Grille de Loisirs */
+.loisirs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px 0;
+}
+
+/* Cartes de Loisirs */
+.loisir-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+    border-top: 4px solid #ff7675; /* Couleur différente pour varier de l'accueil */
+}
+
+.loisir-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+    border-top-color: #d63031;
+}
+
+.loisir-card h2 {
+    color: #2d3436;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.loisir-card p {
+    color: #636e72;
+    line-height: 1.7;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .loisirs-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* --- Style Passions avec Icônes --- */
+
+.passions-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px 0;
+}
+
+.passion-card {
+    background: #ffffff;
+    width: 300px;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.passion-card:hover {
+    transform: translateY(-5px);
+    border-color: #007bff;
+}
+
+.passion-icon {
+    background: #f0f7ff; /* Un fond bleu très clair pour l'icône */
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; /* Cercle parfait */
+}
+
+.passion-info h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+}
+
+.passion-info p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
